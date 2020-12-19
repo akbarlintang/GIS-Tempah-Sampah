@@ -8,7 +8,6 @@ L.tileLayer('https://api.maptiler.com/maps/streets/{z}/{x}/{y}.png?key=1jJMmdef3
     zoomOffset: -1,
 }).addTo(mymap);
 
-var marker = L.marker([-7.124931294693476, 110.4174787592224]).addTo(mymap);
 var marker = L.marker([-7.131926301726001, 110.4120384156704]).addTo(mymap);
 var marker = L.marker([-7.1124286733610695, 110.41415935939476]).addTo(mymap);
 var marker = L.marker([-7.126910470213697, 110.4228614877783]).addTo(mymap);
@@ -21,7 +20,7 @@ var marker = L.marker([-7.141301039089696, 110.41770562252633]).addTo(mymap);
 var marker = L.marker([-7.1307361524319495, 110.41715544213956]).addTo(mymap);
 var marker = L.marker([-7.146846510482281, 110.43799047407731]).addTo(mymap);
 var marker = L.marker([-7.155376150971502, 110.4228966819512]).addTo(mymap);
-
+var marker = L.marker([-7.124886695122423, 110.41721772807628]).addTo(mymap);
 
 var data = {
     "type": "FeatureCollection",
@@ -132,6 +131,23 @@ var data = {
                 "coordinates": [
                 110.4228614877783,
                 -7.126910470213697
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "TPS Perum Kutilang",
+                "alamat": "Jl. Kutilang Raya, Mojo, Susukan, Kec. Ungaran Timur, 50516",
+                "kelurahan": "Susukan",
+                "kecamatan": "Ungaran Timur",
+                "kapasitas": "3 Meter Kubik"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                110.41721772807628,
+                -7.124886695122423
                 ]
             }
         },
