@@ -4,21 +4,43 @@
           box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Montserrat', sans-serif;
   margin: 0;
+}
+
+body::before {
+  content: '';
+}
+
+.navbar-custom {
+  background-color: #fff !important;
+}
+
+.navbar {
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
 }
 
 .navbar .navbar-brand {
   margin-left: 2em;
   font-weight: 500;
   font-size: 1.4rem;
+  color: #003e1f;
 }
 
 @media screen and (max-width: 970px) {
   .navbar .navbar-brand {
     margin-left: 0.4em;
   }
+}
+
+.navbar .navbar-text {
+  color: #003e1f;
 }
 
 .navbar .navbar-nav {
@@ -35,14 +57,20 @@ body {
   }
 }
 
+.navbar .navbar-nav .active {
+  color: #003e1f !important;
+}
+
 .navbar .navbar-nav .nav-link {
   font-weight: 400;
   position: relative;
   margin-right: 0.5em;
+  color: #003e1f;
 }
 
 .navbar .navbar-nav .nav-link .fas {
   margin-right: 0.2em;
+  color: #003e1f;
 }
 
 .navbar .navbar-nav .nav-link:after {
@@ -53,19 +81,52 @@ body {
   display: block;
   margin-top: 5px;
   right: 0;
-  background: #fff;
-  transition: width .2s ease;
-  -webkit-transition: width .2s ease;
+  background: #003e1f;
+  transition: width .4s ease;
+  -webkit-transition: width .4s ease;
 }
 
 .navbar .navbar-nav .nav-link:hover:after {
   width: 100%;
   left: 0;
-  background: #fff;
+  background: #003e1f;
 }
 
 .content {
   margin-top: 3.6em;
+}
+
+.content .welcome .welcome-msg {
+  margin-top: 2em;
+}
+
+.content .welcome h1 {
+  font-weight: 700;
+  font-size: 3rem;
+  color: #003e1f;
+}
+
+.content .about-us {
+  margin-top: 50vh;
+  z-index: 2;
+}
+
+.content .about-us #about-us {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #003e1f;
+}
+
+.main-page {
+  background-image: url(../img/recycle2.png);
+  background-position: top right;
+  background-repeat: no-repeat;
+  background-size: 45vmax;
+  position: absolute;
+  top: 3em;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
 
 .map {
@@ -82,5 +143,34 @@ body {
     width: 100%;
     margin: 0 auto;
   }
+}
+
+/*
+.sidenav {
+    height: 100%;
+    width: 160px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    overflow-x: hidden;
+    padding-top: 200px;
+
+    @media screen and (max-height: 450px) {
+        padding-top:15px;
+    }
+
+    a {
+        padding: 6px 8px 6px 16px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #818181;
+        display: block;
+    }
+}
+*/
+.footer {
+  margin-top: 1em;
 }
 /*# sourceMappingURL=styles.css.map */
