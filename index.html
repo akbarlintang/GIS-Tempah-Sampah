@@ -6,13 +6,15 @@
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 
+    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+
     <link rel="stylesheet" href="scss/styles.css">
 
     <title>GIS Tempat Sampah</title>
 </head>
 <body>
     <nav class="navbar fixed-top navbar-custom navbar-expand-lg navbar-light bg-light shadow p-3 mb-1 bg-white rounded">
-        <a class="navbar-brand" href="#">(Nama Webapp)</a>
+        <a class="navbar-brand" href="#">Trashify</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -32,27 +34,73 @@
     </nav>
 
     <div class="container content main-page">
-        <div class="container welcome">
-            <h1 class="welcome-msg">Welcome to</h1>
-            <h1>(Nama Webapp)</h1>
+        <img src="./img/recycle2.png" alt="" class="img1">
+        <img src="./img/recycle1.png" alt="" class="img2">
+        <div class="container welcome" data-aos="fade-up" data-aos-duration="1500" id="home">
+            <h1 class="welcome-msg" id="welcome">Welcome to</h1>
+            <h1>Trashify</h1>
+            <h5>Tempat menemukan berbagai lokasi Tempat Pembuangan Sementara di sekitar Anda</h5>
+            <a class="btn btn-success" href="peta.html" role="button">Menuju Peta >></a>
         </div>
 
-        <div class="container about-us">
-            <h2 class="text-center" id="about-us">About Us</h2>
-            <br>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore sed id libero quos! Odit dolorum eveniet ducimus praesentium necessitatibus eos similique consequuntur deleniti adipisci accusantium totam illum quisquam accusamus est quod architecto optio molestias rerum error omnis, at tempore quasi. Magnam amet fugit porro dicta commodi recusandae, impedit suscipit cum nisi error mollitia reiciendis eos. Odit adipisci consectetur provident nulla in recusandae iure quos est! Atque iusto dicta soluta quae et quisquam repellat enim sapiente nisi explicabo, distinctio illo voluptatum consequatur minus dolores doloremque? Officia, reiciendis quos! Expedita et officia nulla possimus doloribus quas, reprehenderit aut, asperiores quaerat mollitia quasi eos aliquam delectus facilis autem quod ratione ut molestiae velit vitae? Tenetur sed non perspiciatis ullam ducimus animi necessitatibus quaerat laboriosam nisi odit, suscipit ratione, illo quidem veniam sit. Laborum quo obcaecati, in et, sint nesciunt velit doloribus nobis blanditiis quisquam repudiandae dolore facere expedita. Commodi odio laborum ullam nobis praesentium voluptatum, provident aut cumque architecto, at blanditiis omnis modi distinctio atque hic doloribus non adipisci voluptate ad suscipit eos facere nemo. Culpa at maiores, commodi veniam nesciunt expedita, dignissimos delectus ullam harum magnam excepturi sapiente esse! Dolorum rerum quia architecto amet commodi placeat, mollitia, error tempore, iste cum necessitatibus.</p>
-        </div>
-
-        <footer class="footer mt-auto py-3">
-            <div class="container">
-                <span>Sticky Footer</span>
+        <div class="container about-us" id="about">
+            <div class="about-us-msg" data-aos="fade-up" data-aos-duration="1500">
+                <h2 class="text-center" id="about-us">Tentang Kami</h2>
+                <br>
+                <p>Trashify adalah Web Application dimana setiap orang dapat mencari dan melihat lokasi-lokasi Tempat Pembuangan Sementara (TPS) yang tersedia di sekitar mereka. Dengan WebApp ini diharapkan masyarakat dapat terbantu dan dimudahkan dalam urusan pembuangan sampah dan kedepannya wilayah mereka dapat lebih bersih dan terawat.
+                </p>
+                <p>Data-data Tempat Pembuangan Sementara (TPS) pada WebApp ini diambil dari data sebaran TPS oleh Dinas Lingkungan Hidup Kab. Semarang dan dapat dijamin keasliannya.</p>
             </div>
-        </footer>
+        </div>
+
+        <div class="container contact-us" id="contact" data-aos="fade-up" data-aos-duration="1500">
+            <h2 class="text-center" id="contact-us">Hubungi Kami</h2>
+            <form action="index.html" class="contact-us-content">
+                <label for="nama">Nama</label>
+                <input type="text" id="nama" name="nama" placeholder="Nama">
+
+                <label for="email">Email</label>
+                <input type="text" id="email" name="email" placeholder="Email">
+
+                <label for="pesan">Pesan</label>
+                <textarea id="pesan" name="pesan" placeholder="Tuliskan pesan anda" style="height:200px"></textarea>
+                <input type="submit" value="Submit">
+            </form>
+        </div> 
+    </div>
+
+    <footer class="footer mt-auto py-3">
+        <div class="container">
+            <div class="footer-sec">
+                <div class="footer-content">
+                    <a href="index.html" class="footer-brand">Trashify</a>
+                </div>
+                <div class="footer-content">
+                    <div class="footer-list">
+                        <a href="#home" class="footer-list-a">Beranda</a>
+                        <a href="#about" class="footer-list-a">About Us</a>
+                        <a href="#contact" class="footer-list-a">Contact Us</a>
+                    </div>
+                </div>
+                <div class="footer-content">
+                    <div class="footer-list footer-right">
+                        <a href="peta.html" class="footer-list-a">Peta</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="copyright">
+        <p class="text-center">2020 - All Rights Reserved Trashify</p>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="https://kit.fontawesome.com/7697ef3946.js" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+    <script src="./index.js"></script>
 </body>
 </html>
