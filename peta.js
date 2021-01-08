@@ -2,6 +2,7 @@
 
 var mymap = L.map('mapid').setView([-7.132642917693282, 110.40581249142896], 15);
 
+/*
 L.tileLayer('https://api.maptiler.com/maps/streets/{z}/{x}/{y}.png?key=1jJMmdef3kGZB8cQE1jF', {
     attribution: '<a href="https://www.maptiler.com/copyright/" target="_blank">&copy; MapTiler</a> <a href="https://www.openstreetmap.org/copyright" target="_blank">&copy; OpenStreetMap contributors</a>',
     maxZoom: 18,
@@ -9,6 +10,12 @@ L.tileLayer('https://api.maptiler.com/maps/streets/{z}/{x}/{y}.png?key=1jJMmdef3
     tileSize: 512,
     zoomOffset: -1,
 }).addTo(mymap)
+*/
+
+googleStreets = L.tileLayer('http://{s}.google.com/vt/lyrs=m&x={x}&y={y}&z={z}',{
+    maxZoom: 20,
+    subdomains:['mt0','mt1','mt2','mt3']
+}).addTo(mymap);
 
 /*
 
@@ -1136,10 +1143,30 @@ var data = {
     ]
 };
 
+/*
 L.geoJSON(data, {
     onEachFeature: function (feature, layer) {
             layer.bindPopup('<h5 class="text-center">'+feature.properties.name+'</h5><p><strong>Alamat</strong>&ensp;&emsp;&thinsp;: '+feature.properties.alamat+'</p><p><strong>Kapasitas</strong>&nbsp;: '+feature.properties.kapasitas+'</p>');
     }
+}).addTo(mymap);
+*/
+
+var myIcon = new L.icon({
+    iconUrl: 'img/tb.png',
+    iconSize: [30, 32],
+    iconAnchor: [16, 37],
+    popupAnchor: [0, -30]
+});
+
+function onEachFeature(feature, layer) {
+    layer.bindPopup('<h5 class="text-center">'+feature.properties.name+'</h5><p><strong>Alamat</strong>&ensp;&emsp;&thinsp;: '+feature.properties.alamat+'</p><p><strong>Kapasitas</strong>&nbsp;: '+feature.properties.kapasitas+'</p>');
+}
+
+L.geoJSON(data, {
+    pointToLayer: function (feature, latlng) {
+        return L.marker(latlng, {icon: myIcon});
+    },
+    onEachFeature: onEachFeature
 }).addTo(mymap);
 
 /*
