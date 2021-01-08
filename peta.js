@@ -158,17 +158,17 @@ var data = {
         {
             "type": "Feature",
             "properties": {
-                "name": "TPS Kuwera",
-                "alamat": "Jl. Semeru, Cirebonan, Bandarjo, Kec. Ungaran Timur, 50517",
+                "name": "TPS Perum Bandarjo 2",
+                "alamat": "Jl. DI Panjaitan, Tarubudaya, Bandarjo, Kec. Ungaran Timur, 50516",
                 "kelurahan": "bandarjo",
                 "kecamatan": "ungtim",
-                "kapasitas": "3 Meter Kubik"
+                "kapasitas": "4 Meter Kubik"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                110.41053592494076,
-                -7.11161923549316
+                110.41471092924475,
+                -7.112501509362824
                 ]
             }
         },
@@ -655,6 +655,144 @@ var data = {
         
 
     /// Kec. Ungaran Barat
+        /// Bandarjo
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "TPS Perum Mapagan",
+                "alamat": "Jl. Patimura, Suwaktu, Bandarjo, Kec. Ungaran Barat, 50511",
+                "kelurahan": "bandarjo",
+                "kecamatan": "ungbar",
+                "kapasitas": "6 Meter Kubik"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                110.40090347772161,
+                -7.11565049438569
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "TPS SMP 3 Ungaran",
+                "alamat": "Jl. Patimura, Suwaktu, Bandarjo, Kec. Ungaran Barat, 50511",
+                "kelurahan": "bandarjo",
+                "kecamatan": "ungbar",
+                "kapasitas": "4 Meter Kubik"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                110.40132726673923,
+                -7.115929957154166
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "TPS DPU",
+                "alamat": "Jl. Kisarino Mangunpranoto, Suwaktu, Bandarjo, Kec. Ungaran Barat, 50517",
+                "kelurahan": "bandarjo",
+                "kecamatan": "ungbar",
+                "kapasitas": "4 Meter Kubik"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                110.40598927059085,
+                -7.118416993801177
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "TPS Taman Batas Kora",
+                "alamat": "Jl. Kisarino Mangunpranoto, Suwaktu, Bandarjo, Kec. Ungaran Barat, 50517",
+                "kelurahan": "bandarjo",
+                "kecamatan": "ungbar",
+                "kapasitas": "8 Meter Kubik"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                110.41202315748184,
+                -7.1102367926491565
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "TPS Pasar Bandarjo",
+                "alamat": "Banaran Barat, Bandarjo, Kec. Ungaran Barat, 50517",
+                "kelurahan": "bandarjo",
+                "kecamatan": "ungbar",
+                "kapasitas": "12 Meter Kubik"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                110.40776933231055,
+                -7.12398524257052
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "TPS Kuwera",
+                "alamat": "Jl. Semeru, Cirebonan, Bandarjo, Kec. Ungaran Barat, 50517",
+                "kelurahan": "bandarjo",
+                "kecamatan": "ungbar",
+                "kapasitas": "3 Meter Kubik"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                110.41053592494076,
+                -7.11161923549316
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "TPS Merapi 1",
+                "alamat": "Jl. Semeru, Cirebonan, Bandarjo, Kec. Ungaran Barat, 50517",
+                "kelurahan": "bandarjo",
+                "kecamatan": "ungbar",
+                "kapasitas": "4 Meter Kubik"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                110.4114568179455,
+                -7.111950308814065
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "TPS Merapi 2",
+                "alamat": "Jl. Merapi, Cirebonan, Bandarjo, Kec. Ungaran Barat, 50517",
+                "kelurahan": "bandarjo",
+                "kecamatan": "ungbar",
+                "kapasitas": "4 Meter Kubik"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                110.409812897984,
+                -7.113145663419583
+                ]
+            }
+        },
+
         /// Lerep
         {
             "type": "Feature",
@@ -672,7 +810,329 @@ var data = {
                 -7.114510769846389
                 ]
             }
-        }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "TPS Sariharjo",
+                "alamat": "Jl. Patimura, Mapagan, Lerep, Kec. Ungaran Barat, 50519",
+                "kelurahan": "lerep",
+                "kecamatan": "ungbar",
+                "kapasitas": "6 Meter Kubik"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                110.40343401150038,
+                -7.117960518206084
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "TPS Lerep",
+                "alamat": "Jl. Srikandi, Lerep, Kec. Ungaran Barat, 50519",
+                "kelurahan": "lerep",
+                "kecamatan": "ungbar",
+                "kapasitas": "8 Meter Kubik"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                110.39751705234683,
+                -7.1276024230866435
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "TPS Lerep 2",
+                "alamat": "Indrakila, Lerep, Kec. Ungaran Barat, 50519",
+                "kelurahan": "lerep",
+                "kecamatan": "ungbar",
+                "kapasitas": "8 Meter Kubik"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                110.38012068465109,
+                -7.136949698411041
+                ]
+            }
+        },
+
+        // Dliwang 
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "TPS Dliwang",
+                "alamat": "Jl. Kartini, Sembungan, Kec. Ungaran Barat, 50511",
+                "kelurahan": "dliwang",
+                "kecamatan": "ungbar",
+                "kapasitas": "6 Meter Kubik"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                110.40273412010579,
+                -7.132912962416154
+                ]
+            }
+        },
+
+        /// Nyantnyono
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "TPS Perum Perikanan Blanten",
+                "alamat": "Jl. Yos Sudarso, Brangkah, Nyatnyono, Kec. Ungaran Barat, 50551",
+                "kelurahan": "nyatnyono",
+                "kecamatan": "ungbar",
+                "kapasitas": "6 Meter Kubik"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                110.39624719430259,
+                -7.1356753144674325
+                ]
+            }
+        },
+
+        /// Sembungan
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "TPS SETDA",
+                "alamat": "Jl. Kartini, Sembungan, Kec. Ungaran Barat, 50511",
+                "kelurahan": "sembungan",
+                "kecamatan": "ungbar",
+                "kapasitas": "6 Meter Kubik"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                110.40335691938989,
+                -7.1289725883291535
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "TPS SMA 1 Ungaran",
+                "alamat": "Jl. Rindang Asih, Sembungan, Kec. Ungaran Barat, 50511",
+                "kelurahan": "sembungan",
+                "kecamatan": "ungbar",
+                "kapasitas": "4 Meter Kubik"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                110.40290302927934,
+                -7.1342077874695216
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "TPS SD Mardirahayu",
+                "alamat": "Jl. Diponegoro, Sembungan, Kec. Ungaran Barat, 50511",
+                "kelurahan": "sembungan",
+                "kecamatan": "ungbar",
+                "kapasitas": "6 Meter Kubik"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                110.40367358534694,
+                -7.132242037617755
+                ]
+            }
+        },
+
+        // Genuk
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "TPS SMA 1 Ungaran",
+                "alamat": "Jl. Diponegoro, Genuk, Kec. Ungaran Barat, 50512",
+                "kelurahan": "genuk",
+                "kecamatan": "ungbar",
+                "kapasitas": "4 Meter Kubik"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                110.40537858759392,
+                -7.139562210146321
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "TPS Nglaras Roso",
+                "alamat": "Jl. Diponegoro, Genuk, Kec. Ungaran Barat, 50512",
+                "kelurahan": "genuk",
+                "kecamatan": "ungbar",
+                "kapasitas": "2 Meter Kubik"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                110.40538566600429,
+                -7.13955740923489
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "TPS DPRD",
+                "alamat": "Jl. Slamet Riyadi, Genuk, Kec. Ungaran Barat, 50512",
+                "kelurahan": "genuk",
+                "kecamatan": "ungbar",
+                "kapasitas": "4 Meter Kubik"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                110.40377457623133,
+                -7.13836789942932
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "TPS RSUD Ungaran",
+                "alamat": "Jl. Wijayakusuma, Genuk, Kec. Ungaran Barat, 50514",
+                "kelurahan": "genuk",
+                "kecamatan": "ungbar",
+                "kapasitas": "8 Meter Kubik"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                110.40603130913604,
+                -7.138465952282652
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "TPS Kelurahan Genuk",
+                "alamat": "Jl. Kyai Mojo Raya, Blanten, Genuk, Kec. Ungaran Barat, 50551",
+                "kelurahan": "genuk",
+                "kecamatan": "ungbar",
+                "kapasitas": "8 Meter Kubik"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                110.39741438317365,
+                -7.138273680433662
+                ]
+            }
+        },
+
+        /// Krajan
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "TPS RumDin WakBup",
+                "alamat": "Jl. Hos Cokroaminoto, Krajan, Kec. Ungaran Barat, 50511",
+                "kelurahan": "krajan",
+                "kecamatan": "ungbar",
+                "kapasitas": "4 Meter Kubik"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                110.40377022953521,
+                -7.121911747797094
+                ]
+            }
+        },
+
+        /// Langensari
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "TPS Langensari",
+                "alamat": "Jl. Erlangga, Kaliaang Dua, Langesari, Kec. Ungaran Barat, 50518",
+                "kelurahan": "langensari",
+                "kecamatan": "ungbar",
+                "kapasitas": "12 Meter Kubik"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                110.41241350470386,
+                -7.165227463741444
+                ]
+            }
+        },
+
+        /// Wujil
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "TPS RM Indah Sari",
+                "alamat": "Jl. Soekarno Hatta, Settigen, Wujil, Kec. Ungaran Barat, 50518",
+                "kelurahan": "wujil",
+                "kecamatan": "ungbar",
+                "kapasitas": "4 Meter Kubik"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                110.4157716101466,
+                -7.172852743059712
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "TPS Kebon Raja",
+                "alamat": "Jl. Soekarno Hatta, Settigen, Wujil, Kec. Ungaran Barat, 50518",
+                "kelurahan": "wujil",
+                "kecamatan": "ungbar",
+                "kapasitas": "4 Meter Kubik"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                110.41596644345925,
+                -7.172659927233027
+                ]
+            }
+        },
+
+        /// Candirejo
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "TPS AKPER",
+                "alamat": "Jl. Gedongsongo, Siroto, Candirejo, Kec. Ungaran Barat, 50512",
+                "kelurahan": "candirejo",
+                "kecamatan": "ungbar",
+                "kapasitas": "4 Meter Kubik"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                110.40677073492483,
+                -7.154000877836924
+                ]
+            }
+        },
     ]
 };
 
