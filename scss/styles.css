@@ -270,8 +270,14 @@ body::before {
   }
 }
 
+.map-title {
+  color: #003e1f;
+  font-weight: 600;
+  margin-bottom: 0.5em;
+}
+
 .map {
-  margin-top: 6em;
+  margin-top: 3em;
   margin-bottom: 2em;
 }
 
