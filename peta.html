@@ -4,7 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 
     <link rel="stylesheet" href="scss/styles.css">
 
@@ -20,22 +21,27 @@
 </head>
 <body>
     <nav class="navbar fixed-top navbar-custom navbar-expand-lg navbar-light bg-light shadow p-3 mb-1 bg-white rounded">
-        <a class="navbar-brand" href="#">Trashify</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav">
-            <a class="nav-link" href="index.html">
-                <i class="fas fa-home"></i>
-                Beranda
-            </a>
-            <a class="nav-link active" href="#">
-                <span class="sr-only">(current)</span>
-                <i class="fas fa-map"></i>
-                <span class="hover">Peta</span>
-            </a>
-        </div>
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Trashify</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">
+                            <i class="fas fa-home"></i>
+                            Beranda
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="peta.html">
+                            <i class="fas fa-map"></i>
+                            Peta
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </nav>
 
@@ -54,13 +60,13 @@
     </div>
     -->
 
-    <div class="container content map">
-        <h2 class="map-title">Peta Sebaran TPS</h2>
+    <div class="container content map" id="map">
+        <h2 class="map-title text-green">Peta Sebaran TPS</h2>
         <div id="mapid"></div>
         <script src="peta.js"></script>
     </div>
 
-    <footer class="footer mt-auto py-3">
+    <footer class="footer mt-auto py-3 text-white">
         <div class="container">
             <div class="footer-sec">
                 <div class="footer-content">
@@ -69,24 +75,19 @@
                 <div class="footer-content">
                     <div class="footer-list">
                         <a href="index.html#home" class="footer-list-a">Beranda</a>
-                        <a href="index.html#about" class="footer-list-a">About Us</a>
-                        <a href="index.html#contact" class="footer-list-a">Contact Us</a>
-                    </div>
-                </div>
-                <div class="footer-content">
-                    <div class="footer-list footer-right">
-                        <a href="peta.html" class="footer-list-a">Peta</a>
+                        <a href="index.html#about" class="footer-list-a">Tentang Kami</a>
+                        <a href="index.html#contact" class="footer-list-a">Hubungi Kami</a>
+                        <a href="#map" class="footer-list-a">Peta</a>
                     </div>
                 </div>
             </div>
+            <p class="text-center copyright">Copyright &copy; 2020 Trashify</p>
         </div>
     </footer>
-    <div class="copyright">
-        <p class="text-center">2020 - All Rights Reserved Trashify</p>
-    </div>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
 
     <script src="https://kit.fontawesome.com/7697ef3946.js" crossorigin="anonymous"></script>
 </body>
